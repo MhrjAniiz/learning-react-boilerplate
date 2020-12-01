@@ -14,6 +14,7 @@ import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Navbar from 'components/Navbar';
 import GlobalStyle from '../../global-styles';
+import RobotApi from 'containers/RobotApi/Loadable';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/robots" component={RobotApi} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

@@ -1,0 +1,10 @@
+.button-div {
+  text-align: center;
+  margin: 20px;
+}
+
+.button-div button {
+  height: 70%;
+  width: 30%;
+  font-size: 30px;
+}

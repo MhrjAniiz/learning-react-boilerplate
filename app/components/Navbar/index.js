@@ -7,15 +7,19 @@
 import React, { memo } from 'react';
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
-
+import { Link } from 'react-router-dom';
 import Nav from './Nav';
 import Paragraph from './P';
-import messages from './messages';
+import './navbar.css';
 
 function Navbar() {
   return (
     <Nav>
-      <Paragraph>RoboFriends</Paragraph>
+      <Paragraph>
+        <Link className="link" to="/">
+          RoboFriends
+        </Link>
+      </Paragraph>
     </Nav>
   );
 }
