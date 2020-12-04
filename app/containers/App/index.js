@@ -16,15 +16,16 @@ import GlobalStyle from '../../global-styles';
 import RobotApi from 'containers/RobotApi/Loadable';
 import Login from 'containers/Login/Loadable';
 import Navbar from 'components/Navbar';
+import PrivateRoute from 'components/PrivateRoute';
 
 export default function App() {
   return (
     <div>
       <Navbar />
       <Switch>
-        {/* <Route exact path="/" component={HomePage} /> */}
-        <Route exact path="/robots" component={RobotApi} />
-        <Route exact path="/" component={Login} />
+        <Route exact path="/" component={HomePage} />
+        <PrivateRoute exact={true} path="/robots" component={RobotApi} />
+        <Route exact path="/login" component={Login} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />
