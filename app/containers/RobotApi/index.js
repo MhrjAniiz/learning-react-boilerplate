@@ -26,7 +26,6 @@ export function RobotApi({ data, fetchData }) {
   useEffect(() => {
     fetchData();
   }, []);
-  console.log(data);
 
   return (
     <div>

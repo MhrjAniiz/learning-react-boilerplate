@@ -15,6 +15,9 @@ export default function HomePage() {
       <Link to="/robots">
         <button> robot page</button>
       </Link>
+      <Link to="/login">
+        <button> login</button>
+      </Link>
     </div>
   );
 }

@@ -2,3 +2,11 @@
   text-decoration: none;
   color: white;
 }
+
+button {
+  font-size: 20px;
+  margin-right: 15px;
+}
+button:hover {
+  color: red;
+}

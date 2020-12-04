@@ -15,11 +15,17 @@ import Image from './Image';
 
 function RobotList({ id, name, email }) {
   return (
-    <Div>
-      <Image src={`https://robohash.org/${id}`} alt="Avatar" class="avatar" />
-      <h3>Name : {name}</h3>
-      <h3>Email : {email}</h3>
-    </Div>
+    <div>
+      <Div>
+        <Image
+          src={`https://robohash.org/${id}`}
+          alt="Avatar"
+          className="avatar"
+        />
+        <h3>Name : {name}</h3>
+        <h3>Email : {email}</h3>
+      </Div>
+    </div>
   );
 }
 
