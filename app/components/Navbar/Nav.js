@@ -7,6 +7,7 @@ const Nav = styled.div`
   color: white;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 `;
 
 export default Nav;

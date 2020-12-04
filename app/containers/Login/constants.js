@@ -1,0 +1,16 @@
+/*
+ *
+ * Login constants
+ *
+ */
+
+export const DEFAULT_ACTION = 'app/Login/DEFAULT_ACTION';
+
+export const ACTION_TYPES = {
+  LOGIN_REQUEST: 'app/Login/LOGIN_REQUEST',
+  HANDLE_CHANGE_NAME: ' app//Login/HANDLE_CHANGE_NAME',
+  HANDLE_CHANGE_PASSWORD: 'app/Login/HANDLE_CHANGE_PASSWORD',
+  LOGIN_REQUEST_SUCCESS: 'app/Login/LOGIN_REQUEST_SUCCESS',
+  LOGIN_REQUEST_FAIL: 'app/Login/LOGIN_REQUEST_FAIL',
+  LOG_OUT: 'app/Login/LOG_OUT',
+};

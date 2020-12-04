@@ -20,6 +20,7 @@ function Navbar() {
           RoboFriends
         </Link>
       </Paragraph>
+      <button>log out</button>
     </Nav>
   );
 }
