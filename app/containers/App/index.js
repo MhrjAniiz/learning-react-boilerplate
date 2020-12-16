@@ -21,7 +21,6 @@ import PrivateRoute from 'components/PrivateRoute';
 export default function App() {
   return (
     <div>
-      <Navbar />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <PrivateRoute exact={true} path="/robots" component={RobotApi} />
