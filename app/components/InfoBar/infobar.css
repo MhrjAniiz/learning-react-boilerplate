@@ -1,0 +1,113 @@
+.info_body {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.info_body {
+  background: #000000;
+}
+.vid {
+  flex: 0.6;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.template {
+  width: 70%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.video-media {
+  width: 51%;
+  position: absolute;
+  top: 22%;
+  right: 25%;
+}
+.third {
+  width: 43%;
+  top: 12%;
+  right: 29%;
+}
+
+.info_card {
+  flex: 0.4;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info_card h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.info_card p {
+  font-size: 20px;
+}
+.banner {
+  position: absolute;
+  width: 45%;
+  height: 80px;
+  background: #000000;
+  top: 70%;
+  z-index: 2;
+  border-radius: 10px;
+  border: 2px solid #303030;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.thumbnail {
+  padding: 5px;
+  width: 50px;
+  height: 60px;
+}
+.spinner {
+  color: white !important;
+  width: 60px !important;
+  height: 40px !important;
+}
+
+.text h3 {
+  margin: 0;
+  color: white;
+}
+.text p {
+  margin: 0;
+  color: #0071eb;
+}
+
+@media only screen and (max-width: 893px) {
+  .info_body {
+    display: block;
+  }
+  .vid {
+    text-align: center;
+  }
+  .info_card {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .info_card h1 {
+    font-size: 30px;
+  }
+
+  .info_card p {
+    font-size: 18px;
+  }
+  .banner {
+    width: 55%;
+    height: 60px;
+  }
+}

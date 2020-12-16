@@ -8,21 +8,25 @@ import React, { memo } from 'react';
 // import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Nav from './Nav';
-import Paragraph from './P';
 import './navbar.css';
+import logo from '../../images/1280px-Netflix_2015_logo.svg.png';
+import { Button } from 'antd';
 
 function Navbar() {
   return (
-    <Nav>
-      <Paragraph>
-        <Link className="link" to="/">
-          RoboFriends
-        </Link>
-      </Paragraph>
-      <button>log out</button>
-    </Nav>
+    <div className="navbar">
+      <img className="logo__image" src={logo} />
+      <Button className="btn" type="primary" danger>
+        Sign In
+      </Button>
+    </div>
   );
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    logout: () => dispatchEvent(logout()),
+  };
 }
 
 Navbar.propTypes = {};

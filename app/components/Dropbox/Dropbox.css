@@ -1,0 +1,16 @@
+.dropbox-body {
+  width: 40%;
+  height: 20px;
+  background: yellow;
+  text-align: center;
+}
+
+.drop-header {
+  font-size: 20px;
+  background: yellow;
+}
+
+.content {
+  color: white;
+  background: yellow;
+}
