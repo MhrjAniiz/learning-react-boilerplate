@@ -15,8 +15,8 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import GlobalStyle from '../../global-styles';
 import RobotApi from 'containers/RobotApi/Loadable';
 import Login from 'containers/Login/Loadable';
-import Navbar from 'components/Navbar';
 import PrivateRoute from 'components/PrivateRoute';
+import Navbar from 'components/Navbar';
 
 export default function App() {
   return (
