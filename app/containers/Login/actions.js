@@ -13,6 +13,7 @@ export const loginRequest = () => {
 };
 
 export const handleNameChange = username => {
+  console.log('name Chnage');
   return {
     type: ACTION_TYPES.HANDLE_CHANGE_NAME,
     username,

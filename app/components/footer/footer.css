@@ -1,0 +1,24 @@
+.footer-body {
+  display: flex;
+  flex-direction: column;
+  color: #3b3b3b;
+  background: #000000;
+  padding-top: 50px;
+}
+
+.footer-body div {
+  margin-left: 20%;
+}
+
+.list {
+  margin: 0;
+  display: flex;
+}
+
+.list ul {
+  list-style-type: none;
+}
+
+.firstUl {
+  padding: 0;
+}

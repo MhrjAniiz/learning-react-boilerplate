@@ -8,16 +8,44 @@
 import React from 'react';
 import './homepage.css';
 import { Link } from 'react-router-dom';
+import Navbar from 'components/Navbar';
+import HomeForm from 'components/HomeForm';
+import HomeBackground from 'components/HomeBackground/HomeBackground';
+import HomePageText from 'components/HomePageTexts/HomePageText';
+import InfoBar from 'components/InfoBar';
+import Hr from 'components/HR/hr';
+import { info } from 'constants/info/info';
+import Question from 'components/Question/Question';
+import Dropbox from 'components/Dropbox/Dropbox';
+import Footer from 'components/footer/footer';
 
 export default function HomePage() {
   return (
-    <div className="button-div">
-      <Link to="/robots">
-        <button> robot page</button>
-      </Link>
-      <Link to="/login">
-        <button> login</button>
-      </Link>
+    <div>
+      <HomeBackground>
+        <Navbar />
+        <HomePageText />
+        <HomeForm />
+      </HomeBackground>
+      <Hr />
+      {info.map(result => {
+        return (
+          <div>
+            <InfoBar
+              key={result.id}
+              heading={result.heading}
+              paragraph={result.paragraph}
+              img={result.img}
+              reverse={result.reverse}
+              videoSrc={result.videoSrc}
+              videoClass={result.videoClass}
+            />
+            <Hr />
+          </div>
+        );
+      })}
+
+      <Footer />
     </div>
   );
 }

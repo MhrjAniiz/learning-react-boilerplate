@@ -1,0 +1,7 @@
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../images//NP-en-20201130-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
