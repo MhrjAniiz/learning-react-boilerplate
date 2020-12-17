@@ -22,3 +22,9 @@
 .firstUl {
   padding: 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .footer-body div {
+    margin-left: 2%;
+  }
+}

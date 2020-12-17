@@ -1,48 +1,42 @@
 .HomePageText {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  position: absolute;
-  top: 40%;
-  left: 15%;
-  text-align: center;
   color: white;
+  margin-top: 70px;
+  text-align: center;
+  padding: 20px;
 }
 
 .HomePageText h1 {
-  margin: 0;
-
   color: white;
   font-size: 50px;
 }
 .HomePageText h3 {
-  margin: 0;
-  font-size: 30px;
   color: white;
+  font-size: 30px;
 }
 
 .HomePageText p {
-  margin-top: 30px;
+  color: white;
   font-size: 18px;
 }
+@media only screen and (max-width: 800px) {
+  .HomePageText {
+    margin-top: 70px;
+  }
+}
 
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 600px) {
   .HomePageText h1 {
-    font-size: 30px;
+    font-size: 28px;
   }
   .HomePageText h3 {
-    margin: 0;
-    font-size: 20px;
-    color: white;
+    font-size: 23px;
   }
+
   .HomePageText p {
     font-size: 15px;
   }
   .HomePageText {
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    text-align: center;
-    color: white;
+    margin-top: 10px;
+    width: 80%;
   }
 }

@@ -23,9 +23,13 @@ export default function HomePage() {
   return (
     <div>
       <HomeBackground>
-        <Navbar />
-        <HomePageText />
-        <HomeForm />
+        <div className="blackGround">
+          <Navbar />
+          <div className="search-container">
+            <HomePageText />
+            <HomeForm />
+          </div>
+        </div>
       </HomeBackground>
       <Hr />
       {info.map(result => {
