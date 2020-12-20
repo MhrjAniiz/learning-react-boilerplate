@@ -16,7 +16,7 @@ import GlobalStyle from '../../global-styles';
 import RobotApi from 'containers/RobotApi/Loadable';
 import Login from 'containers/Login/Loadable';
 import PrivateRoute from 'components/PrivateRoute';
-import Navbar from 'components/Navbar';
+import MoviePage from 'containers/MoviePage/Loadable';
 
 export default function App() {
   return (
@@ -25,6 +25,7 @@ export default function App() {
         <Route exact path="/" component={HomePage} />
         <PrivateRoute exact={true} path="/robots" component={RobotApi} />
         <Route exact path="/login" component={Login} />
+        <PrivateRoute exact path="/movies" component={MoviePage} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

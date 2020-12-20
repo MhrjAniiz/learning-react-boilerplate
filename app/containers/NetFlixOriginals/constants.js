@@ -1,0 +1,16 @@
+/*
+ *
+ * NetFlixOriginals constants
+ *
+ */
+
+export const DEFAULT_ACTION = 'app/NetFlixOriginals/DEFAULT_ACTION';
+
+export const ACTION_TYPES = {
+  FETCH_NETFLIX_ORIGINALS_REQUEST:
+    'app/NetFlixOriginals/FETCH_NETFLIX_ORIGINALS_REQUEST',
+  FETCH_NETFLIX_ORIGINALS_SUCCESS:
+    'app/NetFlixOriginals/FETCH_NETFLIX_ORIGINALS_SUCCESS',
+  FETCH_NETFLIX_ORIGINALS_ERROR:
+    'app/NetFlixOriginals/FETCH_NETFLIX_ORIGINALS_ERROR',
+};

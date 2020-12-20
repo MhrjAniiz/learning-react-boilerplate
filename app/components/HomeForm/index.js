@@ -17,7 +17,7 @@ function HomeForm() {
   return (
     <div className="searchBar">
       <input type="email" placeholder="Email address" />
-      <button type="submit">GET STARTED > </button>
+      <button type="submit">GET STARTED </button>
     </div>
   );
 }

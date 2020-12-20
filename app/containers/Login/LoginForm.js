@@ -19,7 +19,7 @@ export default function LoginForm({
 }) {
   useInjectSaga({ key: 'login', saga });
   useInjectReducer({ key: 'login', reducer });
-  if (authenticated) return <Redirect to="/robots" />;
+  if (authenticated) return <Redirect to="/movies" />;
 
   return (
     <div className="form-main">
