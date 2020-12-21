@@ -26,43 +26,13 @@ import ComedyMovie from '../ComedyMovie/Loadable';
 import Documnetries from '../Documentries/Loadable';
 import Banner from 'components/Banner/Banner';
 import './MoviePage.css';
-import Logo from '../../images/1280px-Netflix_2015_logo.svg.png';
-import { Link, Redirect } from 'react-router-dom';
-import { isLogin, clearLocalSession } from '../../utils/localStorage';
+import Topbar from 'components/Topbar/Topbar';
 
 export function MoviePage() {
   useInjectReducer({ key: 'moviePage', reducer });
 
-  if (!isLogin()) return <Redirect to="/" />;
-  const [show, handleShow] = useState(false);
-
-  const handleLogOut = () => {
-    clearLocalSession();
-    location.replace('/');
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        handleShow(true);
-      } else handleShow(false);
-    });
-
-    return () => {
-      window.removeEventListener('scroll');
-    };
-  }, []);
-
   return (
     <div className="movie-body">
-      <div className={`nav ${show && 'nav__black'}`}>
-        <Link to="/">
-          <img className="nav__logo" src={Logo} alt="" />
-        </Link>
-        <button onClick={handleLogOut} className="nav__logout">
-          logout
-        </button>
-      </div>
       <Banner />
       <div className="row-container">
         <NetFlixOriginals />

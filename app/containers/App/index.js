@@ -17,10 +17,12 @@ import RobotApi from 'containers/RobotApi/Loadable';
 import Login from 'containers/Login/Loadable';
 import PrivateRoute from 'components/PrivateRoute';
 import MoviePage from 'containers/MoviePage/Loadable';
+import Topbar from 'components/Topbar/Topbar';
 
 export default function App() {
   return (
     <div>
+      <Topbar />
       <Switch>
         <Route exact path="/" component={HomePage} />
         <PrivateRoute exact={true} path="/robots" component={RobotApi} />

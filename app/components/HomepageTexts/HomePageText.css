@@ -1,6 +1,6 @@
 .HomePageText {
   color: white;
-  margin-top: 70px;
+  margin-top: 130px;
   text-align: center;
   padding: 20px;
 }
@@ -20,7 +20,7 @@
 }
 @media only screen and (max-width: 800px) {
   .HomePageText {
-    margin-top: 70px;
+    margin-top: 80px;
   }
 }
 
@@ -36,7 +36,7 @@
     font-size: 15px;
   }
   .HomePageText {
-    margin-top: 10px;
+    margin-top: 100px;
     width: 80%;
   }
 }

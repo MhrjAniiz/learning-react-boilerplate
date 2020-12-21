@@ -7,8 +7,7 @@
 
 import React from 'react';
 import './homepage.css';
-import { Link } from 'react-router-dom';
-import Navbar from 'components/Navbar';
+
 import HomeForm from 'components/HomeForm';
 import HomeBackground from 'components/HomeBackground/HomeBackground';
 import HomePageText from 'components/HomePageTexts/HomePageText';
@@ -24,7 +23,6 @@ export default function HomePage() {
     <div>
       <HomeBackground>
         <div className="blackGround">
-          <Navbar />
           <div className="search-container">
             <HomePageText />
             <HomeForm />

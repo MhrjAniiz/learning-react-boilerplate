@@ -24,11 +24,6 @@ export default function LoginForm({
   return (
     <div className="form-main">
       <div className="blackscreen">
-        <div className="logo">
-          <Link to="/">
-            <img src={Logo} alt="" />
-          </Link>
-        </div>
         <div className="form-container">
           <div className="form-body">
             <div className="content-holder">
